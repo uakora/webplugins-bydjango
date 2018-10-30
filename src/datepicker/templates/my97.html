@@ -6,8 +6,20 @@
     <title>DatePicker(My97)</title>
     <!--<script src="/static/plugins/My97DatePicker/WdatePicker.js"></script>-->
     <script src="{% static 'plugins/My97DatePicker/WdatePicker.js'%}"></script>
+
+    <style>
+        p{
+            margin-bottom: 6px;
+        }
+    </style>
 </head>
 <body>
 <h4>DatePicker My97</h4>
+<p>示例1-1-1 常规调用</p>
+<input id="d11" type="text" onClick="WdatePicker()">
+<p>示例1-1-2 图标错发</p>
+<input id="d12" type="text"/>
+<img onclick="WdatePicker({el:'d12'})" src="{% static 'plugins/My97DatePicker/skin/datePicker.gif'%}" width="16" height="22" align="absmiddle"><br>
+<small><strong style="color:red">注意：</strong>只需要传入控件的id即可</small>
 </body>
 </html>
