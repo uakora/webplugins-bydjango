@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>DataTable模块</title>
-    <link rel="stylesheet" type="text/css" href="/static/plugins/DataTables-1.10.15/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="/static/3rdLibs/bootstrap-3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/plugins/DataTables-1.10.15/css/dataTables.bootstrap.css">
+{#    <link rel="stylesheet" type="text/css" href="/static/plugins/DataTables-1.10.15/css/jquery.dataTables.css">#}
     {# custom stylesheet   #}
-    <link rel="stylesheet" type="text/css" href="/static/app/css/datatables/demo01.css">
+    <link rel="stylesheet" type="text/css" href="/static/app/css/datatables/demo02.css">
 
     <script type="text/javascript" src="/static/plugins/DataTables-1.10.15/js/jquery.js"></script>
     <script type="text/javascript" src="/static/plugins/DataTables-1.10.15/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="/static/plugins/DataTables-1.10.15/js/dataTables.bootstrap.js"></script>
 
 </head>
 <body>
@@ -17,7 +20,7 @@
 </div>
 <div class="table-box">
     <div>
-        <table id="table_id_01" class="display">
+        <table id="table_id_01" class="table table-striped table-bordered">
             <caption>数据源类型：数组</caption>
             <thead>
             <tr>
@@ -32,7 +35,7 @@
         </table>
     </div>
     <div>
-        <table id="table_id_02" class="display">
+        <table id="table_id_02" class="table table-striped table-bordered">
             <caption>数据源类型：对象</caption>
             <thead>
             <tr>
@@ -47,23 +50,8 @@
         </table>
     </div>
 </div>
-<div class="table-box">
-    <div>
-        <table id="table_id_03" class="display">
-            <caption>数据源类型：实例</caption>
-            <thead>
-            <tr>
-                <th>Name</th>
-                <th>Salary</th>
-                <th>Office</th>
-                <th>Position</th>
-            </tr>
-            </thead>
-        </table>
-    </div>
-</div>
 </body>
 
-<script src="/static/app/js/datatables/demo01.js"></script>
+<script src="/static/app/js/datatables/demo02.js"></script>
 
 </html>
