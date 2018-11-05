@@ -6,3 +6,6 @@ def demo01(request):
 
 def demo02(request):
     return render(request, 'demo02.html')
+
+def demo03(request):
+    return render(request, 'demo03.html')
