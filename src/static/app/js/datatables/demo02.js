@@ -44,6 +44,9 @@ $(document).ready(function () {
         }
     ];
     $("#table_id_02").DataTable({
+        language: {
+            url: "/static/plugins/DataTables-V1.10.18/i18n/Chinese.lang"
+        },
         data: data_table02,
         columns: [
             {data: "name"},
