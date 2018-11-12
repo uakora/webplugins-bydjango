@@ -20,6 +20,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.page_index),
+    path('test01', views.page_test01),
     path('datepicker/', include('datepicker.urls')),
     path('datatables/', include('datatables.urls')),
 ]
